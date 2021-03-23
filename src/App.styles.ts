@@ -22,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Wrapper = styled.div`
+    margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,6 +51,10 @@ export const Wrapper = styled.div`
         font-weight: 400;
         text-align: center;
         margin: 20px;
+    }
+
+    h2 {
+        color: #fff;
     }
 
     .start,

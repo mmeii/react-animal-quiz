@@ -80,13 +80,21 @@ const App = () => {
       <GlobalStyle />
       <Wrapper>
         <h1>ANIMALS QUIZ</h1>
+
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
-          <button
-            className="start"
-            onClick={startQuiz}
-          >
-            Start
+          <h2>
+            Let's see how well you know your animals! Click start to begin the quiz!
+          </h2>
+        ) : null}
+        {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
+          <div>
+            <button
+              className="start"
+              onClick={startQuiz}
+            >
+              Start
           </button>
+          </div>
         ) : null}
 
         {!gameOver ? <p className="score">Score: {score}</p> : null}
